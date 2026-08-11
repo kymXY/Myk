@@ -45,9 +45,10 @@ export default function Header() {
               <a
                 key={link.label}
                 href={link.href}
-                className="font-body text-sm font-semibold uppercase tracking-wide text-cream/80 transition hover:text-marigold"
+                className="group relative font-body text-sm font-semibold uppercase tracking-wide text-cream/80 transition-colors hover:text-marigold"
               >
                 {link.label}
+                <span className="absolute -bottom-1 left-0 h-[1.5px] w-0 bg-marigold transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </nav>
@@ -61,10 +62,12 @@ export default function Header() {
             </button>
             <a
               href="#shop"
-              className="hidden items-center gap-2 rounded-full border border-cream/25 px-3 py-1.5 text-cream/90 transition hover:border-marigold hover:text-marigold sm:flex"
+              className="group hidden items-center gap-2 rounded-full border border-cream/25 px-3 py-1.5 text-cream/90 transition-all duration-200 hover:border-marigold hover:text-marigold sm:flex"
               aria-label="Bag / Cart"
             >
-              <CartIcon />
+              <span className="inline-block transition-transform duration-300 group-hover:-rotate-12 group-hover:scale-110">
+                <CartIcon />
+              </span>
               <span className="font-mono text-xs">0</span>
             </a>
             <button

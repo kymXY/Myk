@@ -49,7 +49,7 @@ export default function Newsletter() {
             />
             <button
               type="submit"
-              className="shrink-0 rounded-full bg-marigold px-7 py-3.5 font-body text-sm font-bold uppercase tracking-wide text-ink transition hover:bg-marigold-light"
+              className="shrink-0 rounded-full bg-marigold px-7 py-3.5 font-body text-sm font-bold uppercase tracking-wide text-ink transition-all duration-200 hover:scale-105 hover:bg-marigold-light active:scale-95"
             >
               Sumali
             </button>

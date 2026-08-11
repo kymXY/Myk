@@ -31,13 +31,13 @@ export default function Hero() {
         <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row">
           <a
             href="#shop"
-            className="rounded-full bg-marigold px-8 py-3.5 font-body text-sm font-bold uppercase tracking-wide text-ink transition hover:bg-marigold-light"
+            className="rounded-full bg-marigold px-8 py-3.5 font-body text-sm font-bold uppercase tracking-wide text-ink transition-all duration-200 hover:bg-marigold-light hover:scale-105 active:scale-95"
           >
             Mamili Ngayon
           </a>
           <a
             href="#subscribe"
-            className="rounded-full border border-cream/30 px-8 py-3.5 font-body text-sm font-bold uppercase tracking-wide text-cream transition hover:border-marigold hover:text-marigold"
+            className="rounded-full border border-cream/30 px-8 py-3.5 font-body text-sm font-bold uppercase tracking-wide text-cream transition-all duration-200 hover:border-marigold hover:scale-105 hover:text-marigold active:scale-95"
           >
             Mag-subscribe, Makatipid 15%
           </a>

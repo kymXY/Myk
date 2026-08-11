@@ -73,12 +73,12 @@ export default function ShopGrid() {
             <a
               key={cat.name}
               href="#"
-              className="group relative overflow-hidden rounded-3xl border border-cream/10 p-6 transition hover:border-marigold/50 sm:p-7"
+              className="group relative overflow-hidden rounded-3xl border border-cream/10 p-6 transition-all duration-300 hover:-translate-y-2 hover:border-marigold/50 hover:shadow-2xl active:scale-[0.98] sm:p-7"
               style={{
                 background: `linear-gradient(150deg, ${cat.from}, ${cat.to})`
               }}
             >
-              <div className="absolute right-4 top-4 opacity-90">
+              <div className="absolute right-4 top-4 opacity-90 transition-transform duration-300 group-hover:-rotate-12 group-hover:scale-110">
                 <CategoryIcon type={cat.icon} />
               </div>
               <span className="inline-block rounded-full bg-ink/30 px-3 py-1 font-mono text-[10px] uppercase tracking-widest2 text-cream/90">
@@ -89,8 +89,8 @@ export default function ShopGrid() {
               </h3>
               <div className="mt-6 flex items-center justify-between">
                 <span className="font-mono text-lg text-cream">{cat.price}</span>
-                <span className="font-body text-sm font-semibold text-cream/80 transition group-hover:translate-x-1">
-                  Tingnan &rarr;
+                <span className="flex items-center gap-1 font-body text-sm font-semibold text-cream/80 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-cream">
+                  Tingnan <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
                 </span>
               </div>
             </a>

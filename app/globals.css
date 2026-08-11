@@ -81,7 +81,7 @@ html {
 }
 
 .animate-spin-slow {
-  animation: spin-slow 60s linear infinite;
+  animation: spin-slow 32s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

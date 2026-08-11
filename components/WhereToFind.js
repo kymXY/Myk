@@ -30,7 +30,7 @@ export default function WhereToFind() {
           {REGIONS.map((r) => (
             <div
               key={r.name}
-              className="rounded-3xl border border-cream/10 bg-ink-soft p-7 text-center"
+              className="rounded-3xl border border-cream/10 bg-ink-soft p-7 text-center transition-all duration-300 hover:-translate-y-1.5 hover:border-marigold/40"
             >
               <h3 className="font-display text-2xl font-semibold text-marigold">{r.name}</h3>
               <p className="mt-3 font-body text-sm text-cream/65">{r.detail}</p>

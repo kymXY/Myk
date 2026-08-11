@@ -16,7 +16,7 @@ export default function GiftSection() {
         </div>
         <a
           href="#"
-          className="shrink-0 rounded-full bg-cream px-8 py-3.5 font-body text-sm font-bold uppercase tracking-wide text-jeepney transition hover:bg-marigold"
+          className="shrink-0 rounded-full bg-cream px-8 py-3.5 font-body text-sm font-bold uppercase tracking-wide text-jeepney transition-all duration-200 hover:scale-105 hover:bg-marigold active:scale-95"
         >
           Bumili ng Gift Card
         </a>

@@ -1,9 +1,13 @@
+import Counter from "@/components/Counter";
+
 export default function StorySection() {
   return (
     <section id="kwento" className="relative overflow-hidden bg-manila text-ink">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 sm:px-8 lg:grid-cols-2 lg:gap-16 lg:py-28">
-        <div className="order-2 flex items-center justify-center lg:order-1">
-          <MountainScene />
+        <div className="group order-2 flex items-center justify-center lg:order-1">
+          <div className="transition-transform duration-700 group-hover:scale-105">
+            <MountainScene />
+          </div>
         </div>
 
         <div className="order-1 flex flex-col justify-center lg:order-2">
@@ -31,13 +35,13 @@ export default function StorySection() {
 
           <dl className="mt-8 grid grid-cols-3 gap-6 border-t border-ink/10 pt-6">
             {[
-              ["40+", "taon ng pag-iihaw"],
-              ["1,200", "magsasaka partners"],
-              ["100%", "sourced sa Batangas"]
-            ].map(([num, label]) => (
+              [40, "+", "taon ng pag-iihaw"],
+              [1200, "", "magsasaka partners"],
+              [100, "%", "sourced sa Batangas"]
+            ].map(([num, suffix, label]) => (
               <div key={label}>
                 <dt className="font-display text-2xl font-semibold text-jeepney sm:text-3xl">
-                  {num}
+                  <Counter value={num} suffix={suffix} />
                 </dt>
                 <dd className="mt-1 font-body text-xs text-ink/60">{label}</dd>
               </div>

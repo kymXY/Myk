@@ -42,7 +42,7 @@ export default function SubscribeSection() {
 
           <a
             href="#shop"
-            className="mt-8 inline-block rounded-full bg-marigold px-8 py-3.5 font-body text-sm font-bold uppercase tracking-wide text-ink transition hover:bg-marigold-light"
+            className="mt-8 inline-block rounded-full bg-marigold px-8 py-3.5 font-body text-sm font-bold uppercase tracking-wide text-ink transition-all duration-200 hover:bg-marigold-light hover:scale-105 active:scale-95"
           >
             Simulan ang Subscription
           </a>
@@ -57,10 +57,10 @@ export default function SubscribeSection() {
               <button
                 key={p.id}
                 onClick={() => setPlan(p.id)}
-                className={`flex w-full items-center justify-between rounded-2xl border px-5 py-4 text-left transition ${
+                className={`flex w-full items-center justify-between rounded-2xl border px-5 py-4 text-left transition-all duration-200 active:scale-[0.98] ${
                   plan === p.id
                     ? "border-marigold bg-marigold/10"
-                    : "border-cream/15 hover:border-cream/30"
+                    : "border-cream/15 hover:border-cream/30 hover:bg-cream/5"
                 }`}
               >
                 <span>
@@ -75,7 +75,7 @@ export default function SubscribeSection() {
                   <span className="mt-0.5 block font-body text-xs text-cream/55">{p.note}</span>
                 </span>
                 <span
-                  className={`h-5 w-5 shrink-0 rounded-full border-2 ${
+                  className={`h-5 w-5 shrink-0 rounded-full border-2 transition-all duration-200 ${
                     plan === p.id ? "border-marigold bg-marigold" : "border-cream/30"
                   }`}
                 />
