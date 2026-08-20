@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://mykscoffee.com/sitemap.xml",
+      sitemap: "https://myk-d3u6.vercel.app/",
   };
 }
